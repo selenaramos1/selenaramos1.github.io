@@ -1,0 +1,48 @@
+body {
+  background-color: #fff; /* bgc#fff */
+  color: #080808; /* c#080808 */
+}
+header {
+  background-color: #9cbfc1; /* bgc#9CBFC1 */
+  color: #000000; /* c#000000 */
+  background-image: url(yoga_images/lilyheader.jpg); /* bgi */
+  background-position: right; /* bgdp */
+  background-repeat: no-repeat; /* bgr */
+  line-height: 400%; /* lh400% */
+  text-indent: 1em; /* txi */
+}
+nav {
+  background-color: #9cbfc1; /* bgc#9CBFC1 */
+}
+
+nav a {
+  text-decoration: none; /* txd */
+}
+
+h1 {
+  margin-bottom: 0; /*mb0 */
+}
+h1,
+h2,
+h3,
+footer {
+  font-family: Georgia, "Times New Roman", serif;
+}
+h2 {
+  color: #080808; /* c#080808 */
+}
+dt {
+  color: #002171; /* c#002171 */
+}
+footer {
+  font-size: 75%; /* fz75% */
+  font-style: italic; /* fsi */
+  text-align: center; /* txa */
+}
+.yoga {
+  color: #557a7c; /* c#557a7c */
+  font-weight: bold; /* fwb */
+}
+#contact {
+  font-size: 80%; /* fz90% */
+}
