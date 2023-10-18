@@ -1,0 +1,17 @@
+body {
+  background-color: #fff;
+  color: #080808;
+  font-family: "Quicksand", sans-serif;
+}
+.flow {
+  display: flex;
+  flex-direction: row;
+  column-count: 3;
+  column-gap: 25px;
+}
+.flow img {
+  box-shadow: 10px 10px 10px #777;
+  text-align: center;
+  /* max-width: 400px; */
+  width: 250px;
+}
