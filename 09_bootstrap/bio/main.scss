@@ -1,0 +1,70 @@
+$colors: (
+  primary: rgb(238, 238, 238),
+  primary-light: lighten(rgb(238, 238, 238), 40%),
+  accent: #fcae28,
+);
+
+$font-main: "Montserrat", "sans-serif";
+$padding: 15px;
+$borders: 15px;
+
+$tablet: 800px;
+$desktop: 1200px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: $font-main;
+  margin: 0;
+  background-color: color(primary);
+}
+
+ul {
+  list-style-type: circle;
+  //   position: absolute;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+h1 {
+  font-style: 2em;
+  margin-top: 10px;
+
+  text-transform: uppercase;
+
+  @include tablet {
+    width: 30%;
+    font-size: 4em;
+    line-height: 0.9em;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#header {
+  padding: 30px;
+  width: 400px;
+  margin: auto;
+  text-transform: uppercase;
+}
